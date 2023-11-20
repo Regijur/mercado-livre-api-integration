@@ -113,10 +113,13 @@ curl -X GET \
 - **Renovação do Token de Acesso:**
   Periodicamente, é necessário renovar o token de acesso, especialmente se o `refresh_token` estiver disponível. Utilize a rota apropriada para renovar o token, conforme mostrado anteriormente.
 
+- **Segurança na Redireção:**
+  Certifique-se de que o site para o qual o Mercado Livre redireciona após a autorização seja acessado via HTTPS e tenha um certificado válido. O uso de HTTP pode causar falhas no processo de autorização.
+
 Lembre-se de referenciar sempre a [documentação oficial da API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br) para obter informações detalhadas e atualizadas.
 
 ---
 
-Esse guia fornece uma visão geral do processo de autenticação e obtenção de token na API do Mercado Livre. Certifique-se de adaptar as instruções de acordo com a sua aplicação e ambiente de desenvolvimento.
+Esse guia fornece uma visão geral do processo de autenticação e obtenção do token na API do Mercado Livre. Certifique-se de adaptar as instruções de acordo com a sua aplicação e ambiente de desenvolvimento.
 
 Boa integração!
